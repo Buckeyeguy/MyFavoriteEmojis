@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var coolTableview: UITableView!
     
-    var emojis = ["😀 The Happy One","😇","🤔","😛","👻","🍎","🐧","🐝"]
+    var emojis = ["😀 The Happy One","😇 The Angel","🤔 Mr. Thoughtful","😛 the Taunt","👻 Boo Boo","🍎 For the Teacher","🐧 For Elijah","🐝Bee Smart"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = emojis[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "moveSegue", sender: "some emoji")
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
