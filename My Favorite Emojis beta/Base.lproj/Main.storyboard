@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oD2-ik-98A">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oD2-ik-98A">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,6 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zUw-yd-qr3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -43,7 +47,8 @@
         <!--View Controller-->
         <scene sceneID="QSh-gc-joT">
             <objects>
-                <viewController id="PdK-2B-hT6" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dW4-8q-qSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="PdK-2B-hT6" customClass="ViewController" customModule="My_Favorite_Emojis_beta" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d54-DM-wJL"/>
                         <viewControllerLayoutGuide type="bottom" id="9vh-mC-TfW"/>
@@ -53,11 +58,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⛪️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKR-AQ-Hca">
+                                <rect key="frame" x="78.5" y="104" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a church emoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpc-bP-V9f">
+                                <rect key="frame" x="105" y="358" width="165.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Emoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vW0-aw-4Nx">
+                                <rect key="frame" x="127" y="408" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlS-Rf-mXY">
+                                <rect key="frame" x="144" y="459" width="88" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -65,14 +84,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vW0-aw-4Nx" firstAttribute="centerX" secondItem="6Ed-EW-JAM" secondAttribute="centerX" id="3iR-6O-ltS"/>
                             <constraint firstItem="oKR-AQ-Hca" firstAttribute="top" secondItem="d54-DM-wJL" secondAttribute="bottom" constant="40" id="6Uy-vj-Mmc"/>
-                            <constraint firstItem="jpc-bP-V9f" firstAttribute="top" secondItem="oKR-AQ-Hca" secondAttribute="bottom" constant="30" id="IvQ-wJ-VSZ"/>
+                            <constraint firstItem="jpc-bP-V9f" firstAttribute="top" secondItem="oKR-AQ-Hca" secondAttribute="bottom" constant="15" id="IvQ-wJ-VSZ"/>
+                            <constraint firstItem="PlS-Rf-mXY" firstAttribute="centerX" secondItem="6Ed-EW-JAM" secondAttribute="centerX" id="KI4-7D-Da2"/>
                             <constraint firstItem="jpc-bP-V9f" firstAttribute="centerX" secondItem="6Ed-EW-JAM" secondAttribute="centerX" id="O3R-4l-6Ja"/>
                             <constraint firstItem="oKR-AQ-Hca" firstAttribute="centerX" secondItem="6Ed-EW-JAM" secondAttribute="centerX" id="Sng-Ox-fJ7"/>
+                            <constraint firstItem="vW0-aw-4Nx" firstAttribute="top" secondItem="jpc-bP-V9f" secondAttribute="bottom" constant="30" id="Vso-HP-5df"/>
+                            <constraint firstItem="PlS-Rf-mXY" firstAttribute="top" secondItem="vW0-aw-4Nx" secondAttribute="bottom" constant="30" id="ruX-kR-T4w"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="categoryLabel" destination="vW0-aw-4Nx" id="tLv-Ld-JH0"/>
+                        <outlet property="descriptionLabel" destination="PlS-Rf-mXY" id="iLS-tk-iZy"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dW4-8q-qSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1824.8" y="15.742128935532236"/>
         </scene>
